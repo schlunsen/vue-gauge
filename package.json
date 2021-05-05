@@ -1,44 +1,33 @@
 {
-  "name": "@chrisheanan/vue-gauge",
+  "name": "@schlunsen/vue-gauge",
   "version": "1.2.2",
-  "main": "main.js",
+  "private": true,
   "description": "This is a Vue JS component plugin to create gauge charts.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chrisheanan/vue-gauge.git"
+  "author": {
+    "name": "Christopher David Heanan",
+    "url": "https://chrish.dev/"
   },
-  "keywords": [
-    "vue",
-    "vue-js",
-    "gauge",
-    "speed-o-meter",
-    "tachometer",
-    "measuring",
-    "tachograph",
-    "tach",
-    "measuring instrument",
-    "chart",
-    "graph"
-  ],
-  "author": "Christopher David Heanan (https://chrish.dev/)",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/chrisheanan/vue-gauge/issues"
-  },
-  "homepage": "https://github.com/chrisheanan/vue-gauge#readme",
   "scripts": {
-    "serve": "vue-cli-service serve ./src/demo.js",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "ngrok": "ngrok http -host-header=rewrite localhost:8080"
+    "ngrok": "ngrok http -host-header=rewrite localhost:8080",
+    "storybook:build": "vue-cli-service storybook:build -c config/storybook",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006 -c config/storybook"
   },
+  "main": "main.js",
   "dependencies": {
-    "bezier-easing": "^2.1.0"
+    "bezier-easing": "^2.1.0",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.4.6",
-    "@vue/cli-plugin-eslint": "^4.4.6",
-    "@vue/cli-service": "^4.4.6",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/vue": "^6.0.26",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "core-js": "^3.6.5",
@@ -47,6 +36,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^1.19.1",
     "vue": "^2.6.11",
+    "vue-cli-plugin-storybook": "~2.0.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -74,5 +64,29 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "_id": "@chrisheanan/vue-gauge@1.2.2",
+  "bugs": {
+    "url": "https://github.com/chrisheanan/vue-gauge/issues"
+  },
+  "homepage": "https://github.com/chrisheanan/vue-gauge#readme",
+  "keywords": [
+    "vue",
+    "vue-js",
+    "gauge",
+    "speed-o-meter",
+    "tachometer",
+    "measuring",
+    "tachograph",
+    "tach",
+    "measuring instrument",
+    "chart",
+    "graph"
+  ],
+  "license": "BSD-3-Clause",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisheanan/vue-gauge.git"
+  }
 }
